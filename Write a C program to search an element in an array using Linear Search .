@@ -1,0 +1,33 @@
+#include<stdio.h>
+
+int main(){
+
+    int x;
+
+    printf("Enter size of array : ");
+
+    scanf("%d",&x);
+    int prince[x],i,terget,check=0;
+
+    printf("Enter elements of Array : ");
+    for(i=0; i<x; i++){
+        scanf("%d",&prince[i]);
+    }
+    printf("Enter terget number : ");
+    scanf("%d",&terget);
+
+    for(i=0; i<x; i++){
+        if(prince[i]==terget){
+            check=1;
+            break;
+        }
+    }
+    if(check==1){
+        printf("Found in index %d",i+1);
+    }
+    else{
+        printf("Not found");
+    }
+   return 0;
+}
+
