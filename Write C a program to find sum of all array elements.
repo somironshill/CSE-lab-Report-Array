@@ -1,0 +1,34 @@
+#include<stdio.h>
+
+int main(){
+
+ int x;
+
+ printf("Enter size of array : ");
+
+ scanf("%d",&x);
+
+ int prince[x],i,sum=0;
+
+ printf("Input elements : ");
+
+ for(i=0; i<x; i++){
+
+ scanf("%d",&prince[i]);
+
+ }
+
+ for(i=0; i<x; i++){
+
+ sum += prince[i];
+
+ }
+
+ printf("Sum of all elements is : ");
+
+ printf("%d",sum);
+
+ return 0;   
+
+ }
+
