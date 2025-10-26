@@ -1,0 +1,37 @@
+#include<stdio.h>
+
+int main(){
+
+ int x , i;
+
+ printf("Enter size of arry : ");
+
+ scanf("%d",&x);
+
+ int prince[x];
+
+ printf("Input elements : ");
+
+ for(i=0; i<x; i++){
+
+ scanf("%d",&prince[i]);
+
+ }
+
+ printf("Negative elements are : ");
+
+ for(i=0; i<x; i++){
+
+ if(prince[i]<0){
+
+ printf("%d ",prince[i]);
+
+ }
+
+ }
+
+ return 0;
+
+}
+
+
